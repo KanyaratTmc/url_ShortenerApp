@@ -5,13 +5,13 @@ This project is a simple URL shortener built with Flask. It allows users to ente
 
 โปรเจกต์นี้เป็นตัวย่อลิงก์ที่พัฒนาด้วย Flask ช่วยให้ผู้ใช้สามารถป้อน URL ยาว ๆ แล้วสร้างลิงก์ย่อพร้อม QR Code เพื่อให้เข้าถึงได้ง่ายขึ้น
 
-## Features | คุณสมบัติ
+## Features | คุณสมบัติ 🛠️
 - Shorten long URLs into unique short codes
 - Store URLs in an SQLite database
 - Generate QR codes for shortened URLs
 - Redirect users to the original URL when they visit the shortened link
 - Web interface using Bootstrap
-
+---
 - ย่อลิงก์ให้เป็นรหัสสั้น ๆ ที่ไม่ซ้ำกัน
 - บันทึก URL ไว้ในฐานข้อมูล SQLite
 - สร้าง QR Code สำหรับลิงก์ที่ถูกย่อ
@@ -27,67 +27,37 @@ Make sure you have the following installed:
 - qrcode
 - Pillow (for QR code image generation) | Pillow (ใช้สำหรับสร้าง QR Code เป็นภาพ)
 
-## Installation | การติดตั้ง
-1. Clone the repository:
+## Installation | การติดตั้ง ⚙️
+1. Clone the repository:   โคลนโปรเจกต์:
    ```bash
-   git clone https://github.com/your-repo/url-shortener.git
+   git clone https://github.com/KanyaratTmc/url_ShortenerApp.git
    cd url-shortener
    ```
-
-   โคลนโปรเจกต์:
-   ```bash
-   git clone https://github.com/your-repo/url-shortener.git
-   cd url-shortener
-   ```
-
-2. Create a virtual environment (optional but recommended):
+2. Create a virtual environment (optional but recommended):  สร้าง Virtual Environment (ไม่จำเป็นต้องใช้ก็ได้แต่แนะนำให้ใช้):
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
-
-   สร้าง Virtual Environment (แนะนำให้ใช้):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # บน Windows ใช้ `venv\Scripts\activate`
-   ```
-
-3. Install dependencies:
+3. Install dependencies:  ติดตั้งไลบรารีที่จำเป็น:
    ```bash
    pip install flask qrcode[pil]
    ```
-
-   ติดตั้งไลบรารีที่จำเป็น:
-   ```bash
-   pip install flask qrcode[pil]
-   ```
-
-4. Run the application:
+4. Run the application:  รันแอปพลิเคชัน:
    ```bash
    python url_ShortenerApp.py
    ```
-
-   รันแอปพลิเคชัน:
-   ```bash
-   python url_ShortenerApp.py
-   ```
-
-5. Open your browser and go to:
+5. Open your browser and go to:  เปิดเบราว์เซอร์และไปที่:
    ```
    http://localhost:5000
    ```
 
-   เปิดเบราว์เซอร์และไปที่:
-   ```
-   http://localhost:5000
-   ```
 
-## Usage | วิธีการใช้งาน
+## Usage | วิธีการใช้งาน 🚀
 1. Enter a URL into the input field and click the "Shorten URL" button.
 2. The shortened URL will be displayed along with a QR code.
 3. Click the shortened URL or scan the QR code to access the original URL.
 4. To visit the original URL, enter `http://localhost:5000/<short_code>` in your browser.
-
+---
 1. ป้อน URL ที่ต้องการย่อในช่องป้อนข้อมูล แล้วกดปุ่ม "ย่อ URL"
 2. ระบบจะแสดงลิงก์ที่ถูกย่อและ QR Code
 3. สามารถคลิกลิงก์หรือสแกน QR Code เพื่อเข้าถึง URL ต้นฉบับได้
@@ -117,8 +87,8 @@ url-shortener/
 
   สามารถเปลี่ยนชื่อฐานข้อมูลได้ในตัวแปร `DATABASE` ในไฟล์ `url_ShortenerApp.py`
 
-## License | ลิขสิทธิ์
-This project is open-source. Feel free to modify and use it for personal or commercial projects.
+---
 
-โปรเจกต์นี้เป็นโอเพนซอร์ส สามารถแก้ไขและนำไปใช้ได้ทั้งในเชิงส่วนตัวและเชิงพาณิชย์
-
+Developer 👨‍💻
+Kanyarat Thammachot
+© 2025
